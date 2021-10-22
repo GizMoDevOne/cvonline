@@ -1,0 +1,88 @@
+.container {
+	margin: 0 auto;
+	width: 800px;
+	border: 1px;
+}
+a:link { 
+ text-decoration:none; 
+}
+a:hover { 
+ color: red;
+}
+
+.alert {
+	cursor:pointer;
+	display: block; /*pour mettre l'element comme un div */
+    text-align: center;
+	color: #ff7800;
+	text-transform: capitalize;
+	letter-spacing: 3px;
+	font-weight : bold;
+	border: solid;
+	width: 200px;
+	height: 30px;
+	margin: 0 auto;
+	padding: 10px 10px 0 10px;
+}
+.alert:hover {
+	color: red;
+}
+
+#panel, #flip {
+    padding: 5px;
+    text-align: center;
+    background-color: #e5eecc;
+    border: solid 1px #c3c3c3;
+	cursor:pointer;
+}
+
+#panel {
+    padding: 50px;
+    display: none;
+}
+
+/* Bouton ON/OFF */
+.onoffswitch {
+	margin: 0 auto;
+    position: relative; width: 100px;
+    -webkit-user-select:none; -moz-user-select:none; -ms-user-select: none;
+}
+.onoffswitch-checkbox {
+    display: none;
+}
+.onoffswitch-label {
+    display: block; overflow: hidden; cursor: pointer;
+    height: 35px; padding: 0; line-height: 35px;
+    border: 2px solid #CCCCCC; border-radius: 35px;
+    background-color: #FFFFFF;
+    transition: background-color 0.3s ease-in;
+}
+.onoffswitch-label:before {
+    content: "";
+    display: block; width: 35px; margin: 0px;
+    background: #FFFFFF;
+    position: absolute; top: 0; bottom: 0;
+    right: 63px;
+    border: 2px solid #CCCCCC; border-radius: 35px;
+    transition: all 0.3s ease-in 0s; 
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label {
+    background-color: #49E845;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label, .onoffswitch-checkbox:checked + .onoffswitch-label:before {
+   border-color: #49E845;
+}
+.onoffswitch-checkbox:checked + .onoffswitch-label:before {
+    right: 0px; 
+}
+
+/* FOOTER */
+footer {
+	background:#bbbbbb;
+	position:absolute;
+	bottom:0;
+	text-align: center;
+	width:100%;
+	padding:0px 0px 0px 0px;
+	height:50px;
+}

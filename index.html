@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="FR">
+    <head>
+        <meta charset="utf-8">
+        <title>Page de test HTML</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+	<div class="container">
+
+        <!-- Un peu de texte affiché en HTML -->
+        <h1>Bonjour tout le monde, ceci est une page statique avec du HTML !</h1>
+		
+		<!-- Un peu de texte affiché en Javascript -->
+		<span class="alert" onclick="alert('Bienvenue les Cyber !');">Message important</span>
+		
+<!-- 		<p id="demo">Savez-vous que le javascript</p>
+		<button type="button" onclick="document.getElementById('demo').innerHTML = 'Peut améliorer l\'interactivité de votre site'">afficher la suite</button>
+		<br> -->
+		
+		<!-- Appel d'une image -->
+<!-- 		<img id="logo" src="elephant.png" alt="Logo PHP" height="75" width="105" style="position: relative; left: 350px;"> -->
+		
+		<!-- 2 boutons Javascript magique-->
+<!-- 		<br>
+		<button type="button" onclick="document.getElementById('logo').style.display='block'">Vu</button>
+		<button type="button" onclick="document.getElementById('logo').style.display='none'">Pas vu</button> -->
+		
+		<!-- Une animation avec jQuery -->
+<!-- 		<br><br>
+		<button id="clic">jQuery me donne également des super pouvoirs !</button> -->
+		
+		<br><br>
+		<!-- Une action toogle avec jQuery -->
+<!-- 		<div id="flip">Et si je veux en voir + ou -</div>
+		<div id="panel">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+		 -->
+<!-- 		<h2>Alors ? On valide l'utilisation du CSS3 et de jQuery ?</h2>
+		<div class="onoffswitch">
+			<input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch">
+			<label class="onoffswitch-label" for="myonoffswitch"></label>
+		</div> -->
+	</div>
+	
+		<footer>
+			<p>
+				<a href="index.html">Accueil</a> | 
+				<a href="page2.html">Page 2</a> | 
+				<a href="page3.html">Page 3</a> | 
+				<a href="page4.html">Page 4</a> | 
+				<a href="page5.html">Page 5</a> | 
+				<a href="http://ww.google.fr" target="_blank">Google</a>
+			</p>
+		</footer>
+
+		<!-- <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script> -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+		
+		<script>
+		$( "#clic" ).click(function() {
+		  $( "#logo" ).animate({
+			left: "80px",
+		  }, 3000, function() {
+		  });
+		  $( "#logo" ).animate({
+			left: "350px",
+		  }, 3000, function() {
+		  });
+		});
+		</script>
+		
+		<script>
+		$(document).ready(function(){
+			$("#flip").click(function(){
+				$("#panel").slideToggle("slow");
+			});
+		});
+		</script>
+    </body>
+</html>
